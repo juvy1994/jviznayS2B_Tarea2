@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jviznayS2B_Tarea2.Views.FrmPrincipal"
+             Title="Semana 2">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label 
+                Text="Sistema de Calificaciones"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label Text="Nombre del Estudiante" />
+            <Picker x:Name="pkEstudiantes"
+                    Title="Estudiantes">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Julio Vizñay</x:String>
+                        <x:String>Edwin Guamán</x:String>
+                        <x:String>Carlos Flores</x:String>
+                        <x:String>Alisson Burbano</x:String>
+                        <x:String>Kevin Tigse</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Nota Seguimiento 1 (0.3)" />
+            <Entry x:Name="txtNotaUno" 
+                   Keyboard="Numeric" 
+                   Placeholder="0 - 10"
+                   MaxLength="3"
+                   TextChanged="txtNotaUno_TextChanged"
+                   />
+
+            <Label Text="Examen 1 (0.2)" />
+            <Entry x:Name="txtExamenUno" 
+                   Keyboard="Numeric" 
+                   Placeholder="0 - 10"
+                   MaxLength="3"
+                   TextChanged="txtExamenUno_TextChanged"/>
+
+            <Label Text="Nota Seguimiento 2 (0.3)" />
+            <Entry x:Name="txtNotaDos" 
+                   Keyboard="Numeric" 
+                   Placeholder="0 - 10"
+                   MaxLength="3"
+                   TextChanged="txtNotaDos_TextChanged"/>
+
+            <Label Text="Examen 2 (0.2)" />
+            <Entry x:Name="txtExamenDos" 
+                   Keyboard="Numeric" 
+                   Placeholder="0 - 10"
+                   MaxLength="3"
+                   TextChanged="txtExamenDos_TextChanged"/>
+
+            <Label Text="Fecha" />
+            <DatePicker x:Name="txtFecha" 
+                        DateSelected="txtFecha_DateSelected"/>
+
+            <Button x:Name="btnCalcular"
+                   Text="Calcular"
+                    Clicked="btnCalcular_Clicked"
+                    Margin="25"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
