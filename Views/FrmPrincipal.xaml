@@ -57,8 +57,7 @@
                    TextChanged="txtExamenDos_TextChanged"/>
 
             <Label Text="Fecha" />
-            <DatePicker x:Name="txtFecha" 
-                        DateSelected="txtFecha_DateSelected"/>
+            <DatePicker x:Name="txtFecha" />
 
             <Button x:Name="btnCalcular"
                    Text="Calcular"

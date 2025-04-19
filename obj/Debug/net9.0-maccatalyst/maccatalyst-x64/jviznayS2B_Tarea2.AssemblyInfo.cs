@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("jviznayS2B_Tarea2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+7bec80ff79986650f89e3439991289002d6b507e")]
 [assembly: System.Reflection.AssemblyProductAttribute("jviznayS2B_Tarea2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("jviznayS2B_Tarea2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
